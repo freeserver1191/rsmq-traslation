@@ -60,7 +60,7 @@ Helper to simply implement a worker [RSMQ ( Redis Simple Message Queue )](https:
 
 - **queuename**: *( `String` required )* The queuename to pull the messages
 - **options** *( `Object` optional )* The configuration object
-	- **options.interval**: *( `Number[]` optional; default = `[ 0, 1, 5, 10 ]` )* 증가하는 대기 시간 (초 *)* 의 배열입니다. _[More details](https://github.com/mpneuried/rsmq-worker/blob/master/README.md#options-interval)_
+	- **options.interval**: *( `Number[]` optional; default = `[ 0, 1, 5, 10 ]` )* 증가하는 대기 시간 (초 *)* 의 배열입니다. _[More details](#options-interval)_
 	- **options.maxReceiveCount**: *( `Number` optional; default = `10` )* 메시지가 초과 될 때까지 수신
 	- **options.invisibletime**: *( `Number` optional; default = `30` )* 메시지를받은 후 숨길 시간 (초 *)* .
 	- **options.defaultDelay**: *( `Number` optional; default = `1` )* 새 메시지를 대기열로 보내는 데 필요한 기본 지연 (초)입니다.
@@ -149,11 +149,11 @@ A message ( e.g. received by the event `data` or `customExceedCheck` ) 에는 �
 
 ### `.info( cb )`
 
-현재의 큐 속성을 가져옵니다. 이것은 바로 가기 [`rsmq.getQueueAttributes`](https://github.com/smrchy/rsmq#getqueueattributes)입니다.
+현재의 큐 속성을 가져옵니다. 이것은 바로 가기 [`rsmq.getQueueAttributes`](https://github.com/freeserver1191/rsmq-traslation#getqueueattributes)입니다.
 
 **Arguments**
 
-* `cb` : *( `Function` )*: Callback with `( err, attributes )`. 자세한 내용은 [rsmq-docs](https://github.com/smrchy/rsmq#getqueueattributes) 를 참조하십시오.
+* `cb` : *( `Function` )*: Callback with `( err, attributes )`. 자세한 내용은 [rsmq-docs](https://github.com/freeserver1191/rsmq-traslation#getqueueattributes) 를 참조하십시오.
 
 ### `.size( [hidden=false], cb )`
 
