@@ -43,7 +43,7 @@
 
 *RSMQ* 의 핵심을 유지하기 위해 추가 기능을 모듈로 사용할 수 있습니다.
 
-- [**rsmq-worker RSMQ로 작업자**][RSMQ-WORKER](RSMQ-WORKER.MD) 를 구현하는 도우미.
+- [**rsmq-worker RSMQ로 작업자**](RSMQ-WORKER.MD) 를 구현하는 도우미.
 - [**rest-rsmq RSMQ를**](https://github.com/smrchy/rest-rsmq) 위한 RESTful 인터페이스.
 - [**rsmq-cli RSMQ 용**](https://github.com/mpneuried/rsmq-cli) 명령 줄 인터페이스 / 터미널 클라이언트.
 - [**rsmq-promise RSMQ에 대한**](https://github.com/msfidelis/rsmq-promise) Promise 인터페이스
