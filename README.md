@@ -43,7 +43,7 @@
 
 *RSMQ* 의 핵심을 유지하기 위해 추가 기능을 모듈로 사용할 수 있습니다.
 
-- [**rsmq-worker RSMQ로 작업자**](RSMQ-WORKER.MD) 를 구현하는 도우미.
+- [**rsmq-worker RSMQ로 작업자**](https://github.com/mpneuried/rsmq-worker) 를 구현하는 도우미.
 - [**rest-rsmq RSMQ를**](https://github.com/smrchy/rest-rsmq) 위한 RESTful 인터페이스.
 - [**rsmq-cli RSMQ 용**](https://github.com/mpneuried/rsmq-cli) 명령 줄 인터페이스 / 터미널 클라이언트.
 - [**rsmq-promise RSMQ에 대한**](https://github.com/msfidelis/rsmq-promise) Promise 인터페이스
@@ -69,10 +69,10 @@ rsmq = new RedisSMQ( {host: "127.0.0.1", port: 6379, ns: "rsmq"} );
 
 - `host`(String) : *optional (Default : "127.0.0.1")* Redis 서버
 - `port`(Number) : *optional (Default : 6379)* Redis 포트
-- `options`(Object) : *optional (Default : {})* [Redis options](https://github.com/NodeRedis/node_redis#options-object-properties) 객체.
+- `options`(Object) : *optional (Default : {})* [Redis options](https://github.com/freeserver1191/node-redis-translation/blob/master/README.md#options-object-properties) 객체.
 - `client`(RedisClient) : *optional* 기존의 redis 클라이언트 인스턴스. `host`그리고 `server`무시됩니다.
 - `ns`(String) : *optional (기본값 : "rsmq")* RSMQ가 만든 모든 키에 사용 된 이름 공간 접두사
-- `realtime`(Boolean) : *optional (기본값 : false)* 새 메시지의 실시간 게시 활성화 ( [실시간 섹션 참조](https://github.com/smrchy/rsmq/blob/master/README.md#realtime) )
+- `realtime`(Boolean) : *optional (기본값 : false)* 새 메시지의 실시간 게시 활성화 ( [실시간 섹션 참조](https://github.com/freeserver1191/rsmq-traslation/README.md#realtime) )
 
 
 ### Create a queue
