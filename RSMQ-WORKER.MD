@@ -66,7 +66,7 @@ Helper to simply implement a worker [RSMQ ( Redis Simple Message Queue )](https:
 	- **options.defaultDelay**: *( `Number` optional; default = `1` )* 새 메시지를 대기열로 보내는 데 필요한 기본 지연 (초)입니다.
 	- **options.autostart**: *( `Boolean` optional; default = `false` )* init시에 자동 시작
 	- **options.timeout**: *( `Number` optional; default = `3000` )* 메시지 처리 시간 초과 `ms`. 그래서 최소한 3000ms 후에 `next()`메서드 를 호출해야합니다 `message`. `0`그것으로 설정되면 무한대까지 기다릴 것입니다.
-	- **options.customExceedCheck**: *( `Function` optional; )* 사용자 지정 초과 검사를 작성하기위한 원시 메시지 *(메시지 형식 참조)* 를 인수로 갖는 사용자 지정 함수입니다. 당신이 돌려 보내는 경우 `true`에 메시지는 초과하지 않을 것이다. 돌아 오면 `false`정기 점검 `maxReceiveCount`이 사용됩니다.
+	- **options.customExceedCheck**: *( `Function` optional; )* 사용자 지정 초과 검사를 작성하기위한 원시 메시지 *(메시지 형식 참조)* 를 인수로 갖는 사용자 지정 함수입니다. `true`를 설정하면 메시지는 초과하지 않을 것이다. `false`를 설정하면 `maxReceiveCount`가 사용됩니다.
 	- **options.alwaysLogErrors**: *( `Boolean` optional; default = `false` )* 오류 수신기가 연결되어 있어도 오류가 콘솔에 기록됩니다.
 	- **options.rsmq**: *( `RedisSMQ` optional; default = `null` )* 새 클라이언트를 만드는 대신 사용할 기존의 rsmq 인스턴스
 	- **options.redis**: *( `RedisClient` optional; default = `null` )* `rsmq` 인스턴스가 정의 되지 않은 경우 사용할 기존의 redis 클라이언트 인스턴스
