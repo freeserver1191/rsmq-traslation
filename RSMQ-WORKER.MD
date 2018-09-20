@@ -206,7 +206,7 @@ worker.on( "message", function( message, next, msgid ){
 
 ### `deleted`
 
-메시지가 초과 된 후 시작되어 즉시 삭제됩니다.
+메세지가 삭제 된 후에 시작됩니다.
 
 **Arguments** 
 
@@ -255,11 +255,11 @@ worker.on( "message", function( message, next, msgid ){
 
 	
 	var worker = new RSMQWorker( "myqueue", {
-		interval: [ .1, 1 ],				// 수신 할 때마다 100ms를 기다리고 빈 경우에는 1,3까지받습니다.
-		invisibletime: 2,						// 5 초 동안받은 메시지 숨기기
-		maxReceiveCount: 2,					// 삭제 될 때까지 2 번만 메시지를받습니다.
-		autostart: true,						// init에서 작업자를 시작합니다.
-		customExceedCheck: fnCheck	// 사용자 정의 초과 검사를 설정합니다.
+		interval: [ .1, 1 ], // 수신 할 때마다 100ms를 기다리고 빈 경우에는 1,3까지받습니다.
+		invisibletime: 2,	 // 5 초 동안받은 메시지 숨기기
+		maxReceiveCount: 2,	 // 삭제 될 때까지 2 번만 메시지를받습니다.
+		autostart: true,	 // init에서 작업자를 시작합니다.
+		customExceedCheck: fnCheck // 사용자 정의 초과 검사를 설정합니다.
 	});
 
 	// Listen to errors
